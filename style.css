@@ -7,14 +7,15 @@
     margin-right: auto;
     display: block;
     text-align: center;
-    width: 130px;
+    width: 200px;
+    animation: come-in 0.8s, text-idle 10s infinite;
     //margin-top: 25px;
   	//margin-bottom: 25px;
 }
 
 .twitch:link { text-decoration: none; }
 .twitch:visited { text-decoration: none; }
-.twitch:hover { color: #6441a5; text-shadow: 0px 0px 10px #815fc0}
+.twitch:hover { color: #6441a5; text-shadow: 0px 0px 10px #815fc0; transform: rotate(4deg);}
 
 .youtube {
 	color: lightgray;
@@ -25,14 +26,66 @@
     margin-right: auto;
     display: block;
     text-align: center;
-    width: 130px;
+    width: 200px;
+    animation: come-in 1s, text-idle 10s infinite;
     //margin-top: 25px;
   	//margin-bottom: 25px;
 }
 
 .youtube:link { text-decoration: none; }
 .youtube:visited { text-decoration: none; }
-.youtube:hover { color: #c4302b; text-shadow: 0px 0px 10px #d95652}
+.youtube:hover { color: #c4302b; text-shadow: 0px 0px 10px #d95652; transform: rotate(-4deg);}
+
+.about {
+	color: transparent;
+	font-family: aboutFont;
+	transition: 0.75s;
+	font-size: 30;
+	margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+    width: 70px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: come-in-about 2s, rainbow-text 5s infinite; ;
+    background-image: repeating-linear-gradient(to left, red,pink,red);
+    -webkit-background-clip: text;
+}
+
+.normal {
+	color: white;
+	font-family: normalFont;
+	font-size: 20;
+	margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+    position: relative;
+    width: 400px;
+}
+
+@keyframes rainbow-text {
+	0% {background-position: 0 ;}
+	100% {background-position: 70 ;}
+}
+
+@keyframes come-in-about {
+	0% {font-size: 0; color: transparent;}
+	100% {font-size: 30 ;}
+}
+
+@keyframes come-in {
+	0% {font-size: 0; color: transparent;}
+	80% {font-size: 40 ;}
+	100% {font-size: 35 ;}
+}
+
+.about:link { text-decoration: none; }
+.about:visited { text-decoration: none; }
+.about:hover {text-shadow: 0px 0px 10px #ffffff}
 
 body {
 	background: linear-gradient(0deg, #e6d87e, #ff1578);
@@ -55,6 +108,15 @@ body {
 
 @font-face {
 	font-family: redirectFont;
-	src:  url(Rubik-Regular.ttf);
+	src:  url(fonts/Rubik-Regular.ttf);
+}
 
+@font-face {
+	font-family: aboutFont;
+	src:  url(fonts/Mohave-Regular.ttf);
+}
+
+@font-face {
+	font-family: normalFont;
+	src:  url(fonts/Karla-Regular.ttf);
 }
