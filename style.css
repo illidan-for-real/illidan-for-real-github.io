@@ -45,13 +45,13 @@
     margin-right: auto;
     display: block;
     text-align: center;
-    width: 70px;
+    width: 200px;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    animation: come-in-about 2s, rainbow-text 5s infinite; ;
-    background-image: repeating-linear-gradient(to left, red,pink,red);
+    animation: come-in-about 2s, fall-about 1s, rainbow-text 5s infinite; ;
+    background-image: repeating-linear-gradient(to left, red,violet,red);
     -webkit-background-clip: text;
 }
 
@@ -65,16 +65,28 @@
     text-align: center;
     position: relative;
     width: 400px;
+    animation: general-intro 2s;
 }
+
+@keyframes general-intro {
+	0% {color: transparent;}
+	100% {}
+}
+
 
 @keyframes rainbow-text {
 	0% {background-position: 0 ;}
-	100% {background-position: 70 ;}
+	100% {background-position: 200 ;}
 }
 
 @keyframes come-in-about {
-	0% {font-size: 0; color: transparent;}
-	100% {font-size: 30 ;}
+	0% {letter-spacing: 10;}
+	100% {letter-spacing: ;}
+}
+
+@keyframes fall-about {
+	0% {color: white;}
+	100% {}
 }
 
 @keyframes come-in {
@@ -87,8 +99,15 @@
 .about:visited { text-decoration: none; }
 .about:hover {text-shadow: 0px 0px 10px #ffffff}
 
-body {
+.home_bg {
 	background: linear-gradient(0deg, #e6d87e, #ff1578);
+	background-size: 400% 400%;
+	animation: gradient 20s ease infinite;
+	height: 90vh;
+}
+
+.about_bg {
+	background: linear-gradient(0deg, #57bd90, #5970bf);
 	background-size: 400% 400%;
 	animation: gradient 20s ease infinite;
 	height: 90vh;
