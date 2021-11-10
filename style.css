@@ -97,7 +97,7 @@
 
 .about:link { text-decoration: none; }
 .about:visited { text-decoration: none; }
-.about:hover {text-shadow: 0px 0px 10px #ffffff}
+.about:hover {text-shadow: 0px 0px 10px #ffffff; transform: rotateX(-45deg);}
 
 .home_bg {
 	background: linear-gradient(0deg, #e6d87e, #ff1578);
@@ -118,10 +118,10 @@
 		background-position: 0% 100%;
 	}
 	50% {
-		background-position: 100% 50%;
+		background-position: 0% 50%;
 	}
 	100% {
-		background-position: 50% 100%;
+		background-position: 0% 100%;
 	}
 }
 
@@ -139,3 +139,9 @@
 	font-family: normalFont;
 	src:  url(fonts/Karla-Regular.ttf);
 }
+
+html {
+	cursor:  url("cursors/normal.cur"), default;
+}
+
+a { cursor:  url("cursors/precision.cur"), default; }
