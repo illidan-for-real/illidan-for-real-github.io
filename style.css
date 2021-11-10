@@ -100,17 +100,17 @@
 .about:hover {text-shadow: 0px 0px 10px #ffffff; transform: rotateX(-45deg);}
 
 .home_bg {
-	background: linear-gradient(0deg, #e6d87e, #ff1578);
+	background: repeating-linear-gradient(0deg, #e6d87e, #ff1578);
 	background-size: 400% 400%;
 	animation: gradient 20s ease infinite;
-	height: 90vh;
+	height: 45vh;
 }
 
 .about_bg {
-	background: linear-gradient(0deg, #57bd90, #5970bf);
+	background: repeating-linear-gradient(0deg, #57bd90, #5970bf);
 	background-size: 400% 400%;
 	animation: gradient 20s ease infinite;
-	height: 90vh;
+	height: 45vh;
 }
 
 @keyframes gradient {
