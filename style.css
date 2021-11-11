@@ -122,14 +122,14 @@
 	background: repeating-linear-gradient(0deg, #e6d87e, #ff1578);
 	background-size: 400% 400%;
 	animation: gradient 20s ease infinite;
-	height: 45vh;
+	height: 10vh;
 }
 
 .about_bg {
 	background: repeating-linear-gradient(0deg, #57bd90, #5970bf);
 	background-size: 400% 400%;
 	animation: gradient 20s ease infinite;
-	height: 45vh;
+	height: 10vh;
 }
 
 @keyframes gradient {
