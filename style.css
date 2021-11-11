@@ -119,16 +119,16 @@
 .about:hover {text-shadow: 0px 0px 10px #ffffff; transform: rotateX(-45deg);}
 
 .home_bg {
-	background: repeating-linear-gradient(0deg, #e6d87e, #ff1578, #e6d87e, #ff1578);
-	background-size: 400% 400%;
-	animation: gradient 20s ease infinite;
+	background: linear-gradient(0deg, #e6d87e, #ff1578, #e6d87e, #ff1578, #e6d87e);
+	background-size: 3000% 3000%;
+	animation: gradient 20s infinite;
 	height: auto;
 }
 
 .about_bg {
-	background: repeating-linear-gradient(0deg, #57bd90, #5970bf, #57bd90, #5970bf);
-	background-size: 400% 400%;
-	animation: gradient 20s ease infinite;
+	background: linear-gradient(0deg, #57bd90, #5970bf, #57bd90, #5970bf, #57bd90);
+	background-size: 3000% 3000%;
+	animation: gradient 20s infinite;
 	height: auto;
 }
 
@@ -136,7 +136,13 @@
 	0% {
 		background-position: 0% 100%;
 	}
+	25% {
+		background-position: 0% 50%;
+	}
 	50% {
+		background-position: 0% 25%;
+	}
+	75% {
 		background-position: 0% 50%;
 	}
 	100% {
