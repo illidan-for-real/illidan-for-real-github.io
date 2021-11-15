@@ -1,1 +1,10 @@
 background-image: repeating-linear-gradient(to left, indigo, blue, green, yellow, orange, red, purple);
+
+#e6d87e, #DD7797, #e6d87e, #DD7797, #e6d87e
+
+.home_bg {
+	background: linear-gradient(0deg, #1f1f1f, #141414, #1f1f1f, #141414, #1f1f1f);
+	background-size: 3000% 3000%;
+	animation: gradient 20s infinite;
+	height: auto;
+}

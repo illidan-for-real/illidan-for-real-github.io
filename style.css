@@ -89,7 +89,7 @@
 }
 
 .normal:link { text-decoration: none; font-weight: bolder;}
-.normal:link:hover { letter-spacing: 5px; }
+.normal:link:hover { letter-spacing: 2px; }
 .normal:visited { text-decoration: none; }
 
 @keyframes general-intro {
@@ -124,10 +124,7 @@
 .about:hover {text-shadow: 0px 0px 10px #ffffff; transform: rotateX(-45deg);}
 
 .home_bg {
-	background: linear-gradient(0deg, #e6d87e, #DD7797, #e6d87e, #DD7797, #e6d87e);
-	background-size: 3000% 3000%;
-	animation: gradient 20s infinite;
-	height: auto;
+	background: #1c1c1c
 }
 
 .about_bg {
